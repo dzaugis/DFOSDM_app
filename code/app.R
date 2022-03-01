@@ -381,7 +381,8 @@ downloadServer <- function(id, plotType, dataInput, land_sf, plot_lims, mapTitle
 ui <- dashboardPage(
   dashboardHeader(title = "Marine species distribution under CMIP6",
                   titleWidth = 500),
-  dashboardSidebar(h3("Selection Panel"),
+  dashboardSidebar(h3("Project Information"), # make a new tab with project information
+                   h3("Selection Panel"),
                    sideUI("side1")),
   dashboardBody(
     fluidRow(
